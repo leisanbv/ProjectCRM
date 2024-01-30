@@ -5,8 +5,6 @@ import entity.Discipline;
 import entity.Mark;
 import entity.Student;
 import entity.Term;
-import services.MarksService;
-import services.TermService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
