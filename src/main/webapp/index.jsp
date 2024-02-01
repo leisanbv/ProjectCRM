@@ -26,7 +26,6 @@
     <div class="container">
         <a href="/students" class="title-btn">студенты</a>
         <a href="/disciplines" class="title-btn">дисциплины</a>
-        <a href="/terms" class="title-btn">семестры</a>
     </div>
 
 </main>

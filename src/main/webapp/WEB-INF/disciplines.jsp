@@ -41,13 +41,17 @@
 
         </table>
         <div class="discipline-btns">
+            <div class="discipline-btns1">
 
-            <form action="/discipline-create" method="get">
-                <input type="submit" class="discipline-btn" value="создать дисциплину"/>
-            </form>
+                <form action="/discipline-create" method="get">
+                    <input type="submit" class="discipline-btn" value="создать дисциплину"/>
+                </form>
 
-            <input type="submit" onclick="modifyDisciplines()" class="discipline-btn" value="модифицировать выбранную дисциплину"/>
-            <input type="submit" onclick="deleteDisciplines()" class="discipline-btn" value="удалить выбранную дисциплину"/>
+                <input type="submit" onclick="modifyDisciplines()" class="discipline-btn" value="модифицировать выбранную дисциплину"/>
+                <c:if test="${role eq 1}">
+                    <input type="submit" onclick="deleteDisciplines()" class="discipline-btn" value="удалить выбранную дисциплину"/>
+                </c:if>
+            </div>
         </div>
     </div>
 
