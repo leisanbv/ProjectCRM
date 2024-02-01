@@ -34,7 +34,9 @@
         <br>
 
 
-        <input type="submit" value="создать" class="field">
+        <div class="create-btn">
+            <input type="submit" value="создать" class="field">
+        </div>
 
         <c:if test="${message eq 1}">
             <h3>Поля не должны быть пустыми!!!</h3>
