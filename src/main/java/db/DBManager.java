@@ -152,6 +152,7 @@ public class DBManager {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(Constants.URL_TO_DB);
+            conn.getMetaData();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM discipline where status = '1' AND id = " + id);
 
@@ -227,6 +228,7 @@ public class DBManager {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(Constants.URL_TO_DB);
+
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM term where status = '1'");
 
