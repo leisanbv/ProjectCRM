@@ -100,6 +100,8 @@ public class DBManager {
         }
     }
 
+
+    // disciplines
     public static List<Discipline> getAllActiveDisciplines(){
         ArrayList<Discipline> disciplines = new ArrayList<>();
 
@@ -223,6 +225,7 @@ public class DBManager {
     }
 
 
+    // terms
     public static List<Term> getAllActiveTerms(){
         ArrayList<Term> terms = new ArrayList<>();
         try {
